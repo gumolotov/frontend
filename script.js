@@ -43,7 +43,7 @@ if ("IntersectionObserver" in window) {
 if (leadForm && formNote) {
   leadForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    formNote.textContent = "Pedido enviado com sucesso. Agora é só conectar este formulário ao seu backend.";
+    formNote.textContent = "Pedido enviado com sucesso. Agora e so conectar este formulario ao seu backend.";
     leadForm.reset();
   });
 }
