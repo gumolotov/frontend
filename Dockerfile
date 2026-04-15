@@ -1,9 +1,13 @@
-FROM nginx:1.27-alpine
+FROM node:22-alpine
 
-WORKDIR /usr/share/nginx/html
+WORKDIR /app
 
 COPY . .
 
+RUN mkdir -p /app/data
+
+ENV PORT=80
+
 EXPOSE 80
 
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["node", "server.js"]

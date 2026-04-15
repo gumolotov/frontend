@@ -198,6 +198,12 @@ a {
   transform: translateY(-2px);
 }
 
+.button:disabled {
+  cursor: wait;
+  opacity: 0.72;
+  transform: none;
+}
+
 .button-primary {
   background: linear-gradient(135deg, #4b4b4b, #1c1c1c 40%, #000000 100%);
   color: #fff;
@@ -717,6 +723,18 @@ a {
   margin: 0;
   color: #111111;
   font-weight: 700;
+}
+
+.form-note.is-loading {
+  color: var(--text-soft);
+}
+
+.form-note.is-success {
+  color: #111111;
+}
+
+.form-note.is-error {
+  color: #6a0f14;
 }
 
 .site-footer {
